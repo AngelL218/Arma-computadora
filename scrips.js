@@ -1,7 +1,7 @@
 var formulario = document.getElementById("formulario");
 
 function calcular(){
-    var componentes = formulario.componentes.value;
+    var componente = formulario.componente.value;
     var procesador = formulario.procesador.value;
     var disco = formulario.disco.value;
     var ram = formulario.ram.value;
@@ -9,16 +9,16 @@ function calcular(){
 
     var total = 0
 
-              if(componentes == "moni") {
+              if(componente == "moni") {
   total = total + 700;     } 
 
-                if(componentes == "torre") {
+                if(componente == "torre") {
   total = total + 1200;     } 
 
-                if(componentes == "desk") {
+                if(componente == "desk") {
   total = total + 550;     } 
 
-                if(componentes == "gamer") {
+                if(componente == "gamer") {
   total = total + 2500;     } 
 
 
@@ -135,9 +135,18 @@ function calcular(){
         if(formulario.lector.checked == true){
   total += 500; }   
 
-        if(formulario.mouse.checked == true){
+        if(formulario.hdmi.checked == true){
   total += 500; }   
 
-        if(formulario.mouse.checked == true){
+        if(formulario.refrigerante.checked == true){
   total += 500; }   
+
+        if(formulario.herramientas.checked == true){
+  total += 500; }   
+
+
+         formulario.total.value = total;  
+    document.getElementById('total').innerText = total;
+
+        console.info("total");
 }
