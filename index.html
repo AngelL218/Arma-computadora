@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arma tu PC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>"COMPUTER CENTER"</h1>
@@ -12,68 +13,85 @@
     <form action="">
         <h3>Componentes de la PC</h3>
         <select name="componentes" id="componentes">
-            <option value="">Monitorre $700</option>
-            <option value="">Torre $1200</option>
-            <option value="">Desktop $550</option>
-            <option value="">Gamer $2500</option>
+            <option value="moni">Monitorre $700</option>
+            <option value="torre">Torre $1200</option>
+            <option value="desk">Desktop $550</option>
+            <option value="gamer">Gamer $2500</option>
         </select>
 
         <h3>Procesadores</h3>
         <select name="procesador" id="procesador">
-            <option value="">Celeron $900</option>
-            <option value="">Intel i3 $1500</option>
-            <option value="">Intel i5 $3500</option>
-            <option value="">Intel i7 $5000</option>
+            <option value="celeron">Celeron $900</option>
+            <option value="intel3">Intel i3 $1500</option>
+            <option value="intel5">Intel i5 $3500</option>
+            <option value="intel7">Intel i7 $5000</option>
         </select>
         
         <h3>Disco Duro</h3>
         <select name="disco" id="disco">
-            <option value="">500GB $500</option>
-            <option value="">750GB $800</option>
-            <option value="">1TB $1000</option>
-            <option value="">250GB SSD $900</option>
-            <option value="">500GB SSD $1380</option>
+            <option value="hdd1">500GB $500</option>
+            <option value="hdd2">750GB $800</option>
+            <option value="hdd3">1TB $1000</option>
+            <option value="ssd1">250GB SSD $900</option>
+            <option value="ssd2">500GB SSD $1380</option>
         </select>
 
         <h3>Memoria RAM</h3>
         <select name="ram" id="ram">
-            <option value="">4GB $600</option>
-            <option value="">8GB $1050</option>  
-            <option value="">16GB $1950</option>
+            <option value="ram1">4GB $600</option>
+            <option value="ram2">8GB $1050</option>  
+            <option value="ram3">16GB $1950</option>
         </select>
 
         <h3>Monitores</h3>
         <select name="monitor" id="monitor">
-            <option value="">17plg $600</option>
-            <option value="">19plg $800</option>
-            <option value="">21.5plg $1050</option>
-            <option value="">24plg $1300</option>
-            <option value="">27plg $1550</option>
-            <option value="">32plg $1800</option>
+            <option value="1">17plg $600</option>
+            <option value="2">19plg $800</option>
+            <option value="3">21.5plg $1050</option>
+            <option value="4">24plg $1300</option>
+            <option value="5">27plg $1550</option>
+            <option value="6">32plg $1800</option>
         </select>
 
         <h3>Accesorios Extras</h3>
-        <input type="checkbox" name="mouse" id="mouse">mouse
-        <input type="checkbox" name="teclado" id="">
-        <input type="checkbox" name="bocinas" id="">
-        <input type="checkbox" name="webcam" id="">
-        <input type="checkbox" name="ups" id="">
-        <input type="checkbox" name="alfombra" id="">
-        <input type="checkbox" name="control" id="">
-        <input type="checkbox" name="rgb" id="">
-        <input type="checkbox" name="silla" id="">
-        <input type="checkbox" name="wifi" id="">
-        <input type="checkbox" name="usb" id="">
-        <input type="checkbox" name="audifonos" id="">
-        <input type="checkbox" name="monitor2" id="">
-        <input type="checkbox" name="soporte" id="">
-        <input type="checkbox" name="ventilador" id="">Ventilador
-        <input type="checkbox" name="micro" id="">Micrófono
-        <input type="checkbox" name="lector" id="">Lector SD
-        <input type="checkbox" name="hdmi" id="">Cable HDMI
-        <input type="checkbox" name="refrigerante" id="">Base refrigerante
-        <input type="checkbox" name="herramientas" id="">Caja de herramientas
+        <h4>Costo por Accesorios $500 por pieza</h4>
+        <input type="checkbox" name="mouse" id="mouse">Mouse
+        <input type="checkbox" name="teclado" id="teclado">Teclado
+        <input type="checkbox" name="bocinas" id="bocinas">Bocinas
+        <input type="checkbox" name="webcam" id="webcam"> Webcam
+        <input type="checkbox" name="ups" id="ups">UPS
+        <input type="checkbox" name="alfombra" id="alfombra">Alfombrilla
+        <input type="checkbox" name="control" id="control"> Control Gamer
+        <input type="checkbox" name="rgb" id="rgb"> Luz RGB
+        <input type="checkbox" name="silla" id="silla">Silla Gamer
+        <input type="checkbox" name="wifi" id="wifi">Adaptador WiFi
+        <input type="checkbox" name="usb" id="usb">Hub USB
+        <input type="checkbox" name="audifonos" id="audifonos">Audífonos
+        <input type="checkbox" name="monitor2" id="monitor2">Monitor adicional
+        <input type="checkbox" name="soporte" id="soporte">Soporte
+        <input type="checkbox" name="ventilador" id="ventilador">Ventilador
+        <input type="checkbox" name="micro" id="micro">Micrófono
+        <input type="checkbox" name="lector" id="lector">Lector SD
+        <input type="checkbox" name="hdmi" id="hdmi">Cable HDMI
+        <input type="checkbox" name="refrigerante" id="refrigerante">Base refrigerante
+        <input type="checkbox" name="herramientas" id="herramientas">Caja de herramientas
+
+        <br><br>
+
+ <label for="total">
+        <div class="total" id="total" name="total">
+        Total: $0.00</div>
+      </label>
+
+      <button type="button" class="submit-btn" onclick="calcular()" id="total">Calcular Total</button>
     </form>
+
+    <br>
+
+ <footer>
+ Elaborado por: Angel Lara · Proyecto de Formulario · © 2025
+  </footer>
     
+   <script src="scrips.js"></script>
 </body>
 </html>
