@@ -12,75 +12,95 @@ function calcular(){
               if(componente == "moni") {
   total = total + 700;     } 
 
-                if(componente == "torre") {
+              else if(componente == "torre") {
   total = total + 1200;     } 
 
-                if(componente == "desk") {
+               else if(componente == "desk") {
   total = total + 550;     } 
 
-                if(componente == "gamer") {
+               else if(componente == "gamer") {
   total = total + 2500;     } 
+
+        else{
+    alert("Por favor selecciona una opción de Componentes");
+    return; } 
 
 
 
                 if(procesador == "celeron") {
   total = total + 900;     } 
 
-                if(procesador == "intel3") {
+               else if(procesador == "intel3") {
   total = total + 1500;     } 
 
-                if(procesador == "intel5") {
+               else if(procesador == "intel5") {
   total = total + 3500;     } 
   
-                if(procesador == "intel7") {
+               else if(procesador == "intel7") {
   total = total + 5000;     } 
+
+        else{
+    alert("Por favor selecciona una opción de Procesador");
+    return; } 
 
 
 
                 if(disco == "hdd1") {
   total = total + 500;     } 
 
-                if(disco == "hdd2") {
+               else if(disco == "hdd2") {
   total = total + 800;     }
 
-                if(disco == "hdd3") {
+               else if(disco == "hdd3") {
   total = total +1000;     }
 
-                if(disco == "ssd1") {
+            else if(disco == "ssd1") {
   total = total + 900;     }
 
-                if(disco == "ssd2") {
+               else if(disco == "ssd2") {
   total = total + 1380;     }
+
+          else{
+    alert("Por favor selecciona una opción de Disco Duro");
+    return; } 
 
 
                 if(ram == "ram1") {
   total = total + 600;     }
 
-                if(ram == "ram2") {
+               else if(ram == "ram2") {
   total = total + 1050;     }
 
-                if(ram == "ram3") {
+               else if(ram == "ram3") {
   total = total + 1950;     }
+
+          else{
+    alert("Por favor selecciona una opción de RAM");
+    return; } 
 
 
 
                 if(monitor == "1") {
   total = total + 600;     }
 
-                if(monitor == "2") {
+               else if(monitor == "2") {
   total = total + 800;     }
 
-                if(monitor == "3") {
+               else if(monitor == "3") {
   total = total + 1050;     }
 
-                if(monitor == "4") {
+               else if(monitor == "4") {
   total = total + 1300;     }
 
-                if(monitor == "5") {
+               else if(monitor == "5") {
   total = total + 1550;     }
   
-                if(monitor == "6") {
+               else if(monitor == "6") {
   total = total + 1800;     }
+
+          else{
+    alert("Por favor selecciona una opción de Monitor");
+    return; } 
 
 
 
